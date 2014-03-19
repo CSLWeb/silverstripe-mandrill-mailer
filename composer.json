@@ -1,0 +1,25 @@
+{
+	"name": "cslweb/silverstripe-mandrill-mailer",
+	"description": "Allows you to use Mandrill to send your Silverstripe transactional emails.",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe", "mandrill"],
+	"authors": [
+	{
+		"name": "Phill Price",
+		"email": "phill@csl-web.com"
+	}
+	],
+
+	"require":
+	{
+		"mandrill/mandrill": "*"
+		"silverstripe/cms": ">2"
+	},
+	"extras":
+	{
+		"installer-paths" : {
+            "code/ThirdParty/Mandrill": ["mandrill/mandrill"]
+        }
+	},
+	"minimum-stability": "dev"
+}

@@ -1,9 +1,9 @@
 SilverStripe-Mandrill-Mailer
 ============================
 
-Mandrill Mailer for SilverStripe to send SilverStripe Email through the [Mandrill.com] service.
+Mandrill Mailer for SilverStripe to send SilverStripe Email through the [Mandrill.com](http://www.mandrill.com) service.
 
-Basically this is a new Silverstripe Mailer services that communicates with the Mandrill PHP SDK to send email through their service. The benefits of which are outlined at [Mandrill.com].
+This is a new Silverstripe Mailer services that communicates with the Mandrill PHP SDK to send email through their service. The benefits of which are outlined at [Mandrill.com](http://www.mandrill.com).
 
 Events
 ------

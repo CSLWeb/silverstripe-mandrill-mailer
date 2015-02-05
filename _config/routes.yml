@@ -1,0 +1,7 @@
+---
+Name: myroutes
+After: framework/routes#coreroutes
+---
+Director:
+  rules:
+    'mandrillevent//$Action/$ID/$OtherID': 'MandrillEvent_Controller'

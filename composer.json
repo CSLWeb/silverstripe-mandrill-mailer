@@ -12,14 +12,8 @@
 
 	"require":
 	{
-		"mandrill/mandrill": "*"
+		"mandrill/mandrill": "*",
 		"silverstripe/cms": ">2"
-	},
-	"extras":
-	{
-		"installer-paths" : {
-            "code/ThirdParty/Mandrill": ["mandrill/mandrill"]
-        }
 	},
 	"minimum-stability": "dev"
 }

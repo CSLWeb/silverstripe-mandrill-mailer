@@ -1,6 +1,7 @@
 <?php
-Class MandrillMessage extends DataObject{
-  public static $db = array(
+class MandrillMessage extends DataObject
+{
+    public static $db = array(
     'MandrillID' => 'Text',
     'To' => 'Text',
     'From' => 'Text',
@@ -9,7 +10,7 @@ Class MandrillMessage extends DataObject{
     'MandrillStatus' => 'Text',
     'MandrillRejectReason' => 'Text'
   );
-  public static $has_many = array(
+    public static $has_many = array(
     'MandrillEvents' => 'MandrillEvent'
   );
 }

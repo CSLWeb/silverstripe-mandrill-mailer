@@ -1,7 +1,8 @@
 <?php
-class MandrillEvent extends DataObject{
+class MandrillEvent extends DataObject
+{
 
-  public static $db = array(
+    public static $db = array(
     'ts' => 'varchar',
     'event' => 'varchar',
     'url' => 'varchar',
@@ -9,16 +10,16 @@ class MandrillEvent extends DataObject{
     'MessageID' => 'varchar'
     );
 
-  public static $has_one = array(
+    public static $has_one = array(
     'MandrillMessage'=>'MandrillMessage'
   );
 
-  function onBeforeWrite(){
-    if($this->MessageID &&!$this->MandrillMessageID){
-      if($MM = MandrillMessage::get()->filter(array('MandrillID' => $this->MessageID))){
-        $this->MandrillMessageID = $MM->First()->ID;
-      }
+    public function onBeforeWrite()
+    {
+        if ($this->MessageID &&!$this->MandrillMessageID) {
+            if ($MM = MandrillMessage::get()->filter(array('MandrillID' => $this->MessageID))) {
+                $this->MandrillMessageID = $MM->First()->ID;
+            }
+        }
     }
-  }
-
 }
